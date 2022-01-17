@@ -16,7 +16,7 @@ keywords:
 ---
 ### 接口实现 
 
-路由与负载均衡主要的接口是Selector，在同目录下也提供了一个默认的Selector实现，该实现可以通过替换NodeBuilder、Filter、Balancer和来分别实现节点权重计算算法、服务路由过滤策略、负载均衡算法的可插拔
+路由与负载均衡主要的接口是Selector，在同目录下也提供了一个默认的Selector实现，该实现可以通过替换NodeBuilder、Filter、Balancer来分别实现节点权重计算算法、服务路由过滤策略、负载均衡算法的可插拔
 
 ```go
 type Selector interface {
